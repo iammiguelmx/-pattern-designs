@@ -5,6 +5,12 @@ import com.macc.inteface.Automovil;
 
 
 public class CarroEstandar implements Automovil {
+    
+    private String nombre;
+    
+    public CarroEstandar(String s){
+        nombre = s;
+    }
 
     @Override
     public void accelerar() {
