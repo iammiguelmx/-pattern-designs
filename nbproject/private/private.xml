@@ -5,9 +5,12 @@
         <group>
             <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/model/CarroEstandar.java</file>
             <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/inteface/Automovil.java</file>
+            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/model/Student.java</file>
+            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/model/Logger.java</file>
             <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/utl/Algoritmia.java</file>
             <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/model/AutomovilDecorador.java</file>
             <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/model/AutoElectricoFeature.java</file>
+            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/utl/Encryption.java</file>
             <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/main/MainDecorador.java</file>
             <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/main/MainSingleton.java</file>
         </group>
