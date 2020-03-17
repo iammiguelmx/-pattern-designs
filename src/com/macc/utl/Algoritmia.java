@@ -9,6 +9,8 @@ public class Algoritmia {
 
     private static final int MAX = 101;
     private static final String PATTERN = "yyyy-MM-dd";
+    private static final String OS[] = {"WINDOWS","MACOS","LINUX","OTHER"};
+    private static final String  ALPHABET[] = {"A","B","C","D","E"};
 
     /**
      *
@@ -110,6 +112,14 @@ public class Algoritmia {
     static int[] numbers() {
         int[] arr = {5, 6, 7, 8, 9};  //initializing array  
         return arr;
+    }
+    
+    static void stringRandom(){
+        System.out.println(OS[new Random().nextInt(OS.length)]);
+    }
+    
+    static void method(){
+        System.out.println("Hello! This method dont return");
     }
 
     public static void main(String[] args) {
