@@ -40,10 +40,8 @@ public class Algoritmia {
     }
 
     static void reverse(String x) {
-        StringBuilder builder = new StringBuilder();
-        String word = builder.reverse().toString();
-        System.out.println("Reverse: " + word.repeat(MAX));
-        // word = builder.reverse(x);
+        StringBuilder sb = new StringBuilder(x);
+        System.out.println(sb.reverse().toString());
 
     }
 
@@ -77,9 +75,46 @@ public class Algoritmia {
         return fact;
     }
 
-    public static void main(String[] args) {
-
-
+    /**
+     * Fib with switch case for better performance
+     *
+     * @param x
+     * @return
+     */
+    static int fib(int x) {
+        switch (x) {
+            case 0:
+                return 0;
+            case 1:
+                return 1;
+            default:
+                return fib(x - 1) + fib(x - 2);
+        }
     }
+
+    /**
+     * New in java 13
+     *
+     * @param x
+     * @return
+     */
+    static boolean isLegar(int x) {
+        return x >= 18;
+    }
+
+    /**
+     * Return a array.
+     *
+     * @return
+     */
+    static int[] numbers() {
+        int[] arr = {5, 6, 7, 8, 9};  //initializing array  
+        return arr;
+    }
+
+    public static void main(String[] args) {
+        
+    }
+    
 
 }
