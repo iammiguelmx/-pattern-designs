@@ -9,6 +9,18 @@ import java.util.LinkedList;
 import java.util.Random;
 import java.util.StringTokenizer;
 
+/*******************************************************************************
+* Nombre del Proyecto: Utl (Utilerias Generales)<BR>
+* 
+* Objetivo: //TODO Describir <BR>
+* 
+* @author: Miguel Angel Camacho Campos <BR>
+* e-mail : miguel.cam.mx@gmail.com <BR>
+* Fecha de Creación: 15/03/2020, 10:10:33 <BR>
+* Fecha de Ultima Modificacion:  <BR>
+* 
+*******************************************************************************/
+
 public class Algoritmia {
 
     private static final int MAX = 101;

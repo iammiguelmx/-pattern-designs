@@ -3,14 +3,24 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/utl/SendMail.java</file>
+            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/model/MailServers.java</file>
+            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/utl/Algoritmia.java</file>
+            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/main/MainThreads.java</file>
+            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/model/AutoElectricoFeature.java</file>
+            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/model/Class.java</file>
+            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/model/Contantes.java</file>
+            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/main/MainDecorador.java</file>
+            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/main/MainSingleton.java</file>
             <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/model/CarroEstandar.java</file>
             <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/inteface/Automovil.java</file>
             <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/model/Logger.java</file>
-            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/utl/Algoritmia.java</file>
+            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/inteface/Estrategia.java</file>
             <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/model/AutomovilDecorador.java</file>
-            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/model/AutoElectricoFeature.java</file>
-            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/main/MainDecorador.java</file>
-            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/main/MainSingleton.java</file>
+            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/model/ProcessTwo.java</file>
+            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/utl/Encryption.java</file>
+            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/model/AnalisisSimple.java</file>
+            <file>file:/Users/miguelcamacho/Documents/design-patterns/src/com/macc/model/ProcessOne.java</file>
         </group>
     </open-files>
 </project-private>
