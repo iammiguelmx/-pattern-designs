@@ -1,16 +1,18 @@
 package com.macc.utl;
 
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.Random;
+import java.util.StringTokenizer;
 
 public class Algoritmia {
 
     private static final int MAX = 101;
     private static final String PATTERN = "yyyy-MM-dd";
-    private static final String OS[] = {"WINDOWS","MACOS","LINUX","OTHER"};
-    private static final String  ALPHABET[] = {"A","B","C","D","E"};
+    private static final String OS[] = {"WINDOWS", "MACOS", "LINUX", "OTHER"};
+    private static final String ALPHABET[] = {"A", "B", "C", "D", "E"};
 
     /**
      *
@@ -113,18 +115,51 @@ public class Algoritmia {
         int[] arr = {5, 6, 7, 8, 9};  //initializing array  
         return arr;
     }
-    
-    static void stringRandom(){
+
+    static void stringRandom() {
         System.out.println(OS[new Random().nextInt(OS.length)]);
     }
-    
-    static void method(){
+
+    static void method() {
         System.out.println("Hello! This method dont return");
     }
 
-    public static void main(String[] args) {
-        
+    /**
+     * Ordenamiento
+     *
+     * @param arreglo
+     * @return
+     */
+    static int[] burbuja(int[] arreglo) {
+        int auxiliar;
+        int[] arregloOrdenado;
+        for (int i = 2; i < arreglo.length; i++) {
+            for (int j = 0; j < arreglo.length - i; j++) {
+                if (arreglo[j] > arreglo[j + 1]) {
+                    auxiliar = arreglo[j];
+                    arreglo[j] = arreglo[j + 1];
+                    arreglo[j + 1] = auxiliar;
+                }
+            }
+        }
+        arregloOrdenado = arreglo;
+        return arregloOrdenado;
     }
     
+    /**
+     * Tokenizer method
+     * @param string 
+     */
+    static void tokenizer(String string){
+        StringTokenizer tokenizer = new StringTokenizer(string);
+        while (tokenizer.hasMoreElements()) {
+            Object nextElement = tokenizer.nextElement();
+            System.out.println("" + nextElement);
+            
+        }
+    }
 
+    public static void main(String[] args) {
+     
+    }
 }
