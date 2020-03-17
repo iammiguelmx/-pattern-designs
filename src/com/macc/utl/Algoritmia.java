@@ -2,6 +2,8 @@ package com.macc.utl;
 
 
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
+import java.util.Base64;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.Random;
@@ -13,6 +15,7 @@ public class Algoritmia {
     private static final String PATTERN = "yyyy-MM-dd";
     private static final String OS[] = {"WINDOWS", "MACOS", "LINUX", "OTHER"};
     private static final String ALPHABET[] = {"A", "B", "C", "D", "E"};
+    private static final String ALGORITMO = "AES-128";
 
     /**
      *
@@ -158,8 +161,39 @@ public class Algoritmia {
             
         }
     }
+    
 
+    static Object[] descifraContenido(String cadenaCifrada) {
+        String json = Arrays.toString(Base64.getDecoder().decode(cadenaCifrada.getBytes()));
+        return json.split(",");
+    }
+    
+    /**
+     * AES-128
+     * @param datos
+     * @return 
+     */
+    static String cifraContenido(Object[] datos) {
+        String cadena = "";
+        for (Object dato : datos) {
+            cadena += dato + ",";
+        }
+        cadena = cadena.substring(0, cadena.length() - 1);
+        String cadenaCifrada = Base64.getEncoder().encodeToString(cadena.getBytes());
+        return cadenaCifrada;
+    }
+    
+     public static String getHoraActual() {
+        Date date = new Date();
+        return new SimpleDateFormat("HH:mm:ss").format(date);
+    }
+
+     /**
+      * Testing here
+      * @param args 
+      */
     public static void main(String[] args) {
-     
+       
+        
     }
 }
