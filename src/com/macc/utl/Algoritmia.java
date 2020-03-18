@@ -1,6 +1,5 @@
 package com.macc.utl;
 
-
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Base64;
@@ -9,18 +8,19 @@ import java.util.LinkedList;
 import java.util.Random;
 import java.util.StringTokenizer;
 
-/*******************************************************************************
-* Nombre del Proyecto: Utl (Utilerias Generales)<BR>
-* 
-* Objetivo: //TODO Describir <BR>
-* 
-* @author: Miguel Angel Camacho Campos <BR>
-* e-mail : miguel.cam.mx@gmail.com <BR>
-* Fecha de Creación: 15/03/2020, 10:10:33 <BR>
-* Fecha de Ultima Modificacion:  <BR>
-* 
-*******************************************************************************/
-
+/**
+ * *****************************************************************************
+ * Nombre del Proyecto: Utl (Utilerias Generales)<BR>
+ *
+ * Objetivo: //TODO Describir <BR>
+ *
+ * @author: Miguel Angel Camacho Campos <BR>
+ * e-mail : miguel.cam.mx@gmail.com <BR>
+ * Fecha de Creación: 15/03/2020, 10:10:33 <BR>
+ * Fecha de Ultima Modificacion:  <BR>
+ *
+ ******************************************************************************
+ */
 public class Algoritmia {
 
     private static final int MAX = 101;
@@ -160,30 +160,31 @@ public class Algoritmia {
         arregloOrdenado = arreglo;
         return arregloOrdenado;
     }
-    
+
     /**
      * Tokenizer method
-     * @param string 
+     *
+     * @param string
      */
-    static void tokenizer(String string){
+    static void tokenizer(String string) {
         StringTokenizer tokenizer = new StringTokenizer(string);
         while (tokenizer.hasMoreElements()) {
             Object nextElement = tokenizer.nextElement();
             System.out.println("" + nextElement);
-            
+
         }
     }
-    
 
     static Object[] descifraContenido(String cadenaCifrada) {
         String json = Arrays.toString(Base64.getDecoder().decode(cadenaCifrada.getBytes()));
         return json.split(",");
     }
-    
+
     /**
      * AES-128
+     *
      * @param datos
-     * @return 
+     * @return
      */
     static String cifraContenido(Object[] datos) {
         String cadena = "";
@@ -194,18 +195,30 @@ public class Algoritmia {
         String cadenaCifrada = Base64.getEncoder().encodeToString(cadena.getBytes());
         return cadenaCifrada;
     }
-    
-     public static String getHoraActual() {
+
+    static String getHoraActual() {
         Date date = new Date();
         return new SimpleDateFormat("HH:mm:ss").format(date);
     }
 
-     /**
-      * Testing here
-      * @param args 
-      */
+    static int mediaArray(Integer[] array) {
+        int var = 0;
+        for (int i = 1; i < array.length; i++) {
+            // Array for save
+            var += i;
+        }
+        return var;
+    }
+    
+    
+
+    /**
+     * Testing here
+     *
+     * @param args
+     */
     public static void main(String[] args) {
-       
         
+
     }
 }
