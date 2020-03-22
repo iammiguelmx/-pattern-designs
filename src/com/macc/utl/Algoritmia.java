@@ -42,6 +42,7 @@ public class Algoritmia {
     static boolean isPar(int x) {
         return x % 2 == 0;
     }
+    
 
     /**
      * @return number 0 to 100 random
@@ -227,41 +228,55 @@ public class Algoritmia {
 
     /**
      * @param texto
-     * @return true is number 
+     * @return true is number
      * @return false is letter
      */
     static boolean validaNumeroEntero(String texto) {
         return texto.matches("^-?[0-9]+$");
     }
-    
+
     /**
-     * 
+     *
      * @param x
      * @return true = bisisesto
      */
-    static boolean anioBisiesto(int x){
+    static boolean anioBisiesto(int x) {
         GregorianCalendar calendar = new GregorianCalendar();
         return calendar.isLeapYear(x);
     }
-    
+
     /**
      * 
-     * @param studentList
+     * @param year
      * @return 
      */
-    static Integer addStudents(List<Student> studentList){
+    static boolean anioBi(int year) {
+        if (year % 4 != 0) {
+            return false;
+        } else if (year % 400 == 0) {
+            return true;
+        } else return year % 100 != 0;
+    }
+
+
+    /**
+     *
+     * @param studentList
+     * @return
+     */
+    static Integer addStudents(List<Student> studentList) {
         Objects.requireNonNull(studentList);
 //        return studentList.stream().
 //                filter(Objects::nonNull).
 //                map(Student::age).
-                      
-        return  null;
+
+        return null;
     }
-    
+
     /**
      * @return abcedario
      */
-    static void abcedario(){
+    static void abcedario() {
         for (char i = 'Z'; i >= 'A'; i--) {
             System.out.println(i);
         }
@@ -273,6 +288,5 @@ public class Algoritmia {
      * @param args
      */
     public static void main(String[] args) {
-       abcedario();
     }
 }
