@@ -1,12 +1,16 @@
 package com.macc.utl;
 
+import com.macc.model.Student;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Base64;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Random;
 import java.util.StringTokenizer;
+import java.util.Objects;
 
 /**
  * *****************************************************************************
@@ -79,19 +83,6 @@ public class Algoritmia {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(PATTERN);
         String date = simpleDateFormat.format(new Date());
         System.out.println(date);
-    }
-
-    static double factorial(int n) {
-        double fact = 1;
-        int i;
-        if (n == 0) {
-            fact = 1;
-        } else {
-            for (i = 1; i <= n; i++) {
-                fact = fact * i;
-            }
-        }
-        return fact;
     }
 
     /**
@@ -209,8 +200,72 @@ public class Algoritmia {
         }
         return var;
     }
+
+    /**
+     * @param x
+     * @return factorial
+     */
+    static int fact(int x) {
+        switch (x) {
+            case 0:
+                return 1;
+            case 1:
+                return 1;
+            default:
+                return (int) (x * fact(x - 1));
+        }
+    }
+
+    static void arrayRe(int[] array, int indice) {
+        if (indice != array.length) {
+            //Mostramos el valor en ese indice
+            System.out.println(array[indice]);
+            //Llamamos recursivamente a la función
+            arrayRe(array, indice + 1);
+        }
+    }
+
+    /**
+     * @param texto
+     * @return true is number 
+     * @return false is letter
+     */
+    static boolean validaNumeroEntero(String texto) {
+        return texto.matches("^-?[0-9]+$");
+    }
     
+    /**
+     * 
+     * @param x
+     * @return true = bisisesto
+     */
+    static boolean anioBisiesto(int x){
+        GregorianCalendar calendar = new GregorianCalendar();
+        return calendar.isLeapYear(x);
+    }
     
+    /**
+     * 
+     * @param studentList
+     * @return 
+     */
+    static Integer addStudents(List<Student> studentList){
+        Objects.requireNonNull(studentList);
+//        return studentList.stream().
+//                filter(Objects::nonNull).
+//                map(Student::age).
+                      
+        return  null;
+    }
+    
+    /**
+     * @return abcedario
+     */
+    static void abcedario(){
+        for (char i = 'Z'; i >= 'A'; i--) {
+            System.out.println(i);
+        }
+    }
 
     /**
      * Testing here
@@ -218,7 +273,6 @@ public class Algoritmia {
      * @param args
      */
     public static void main(String[] args) {
-        
-
+       abcedario();
     }
 }
