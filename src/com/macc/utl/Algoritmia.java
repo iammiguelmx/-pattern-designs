@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.StringTokenizer;
 import java.util.Objects;
+import java.util.concurrent.TimeUnit;
 
 /**
  * *****************************************************************************
@@ -32,6 +33,11 @@ public class Algoritmia {
     private static final String OS[] = {"WINDOWS", "MACOS", "LINUX", "OTHER"};
     private static final String ALPHABET[] = {"A", "B", "C", "D", "E"};
     private static final String ALGORITMO = "AES-128";
+    private static final String TEXT = "My high school, the Illinois Mathematics and Science Academy, "
+            + "showed me that anything is possible and that you're never too young to think big. "
+            + "At 15, I worked as a computer programmer at the Fermi National Accelerator Laboratory, "
+            + "or Fermilab. After graduating, I attended Stanford for a degree in economics and "
+            + "computer science.";
 
     /**
      *
@@ -42,7 +48,6 @@ public class Algoritmia {
     static boolean isPar(int x) {
         return x % 2 == 0;
     }
-    
 
     /**
      * @return number 0 to 100 random
@@ -246,18 +251,19 @@ public class Algoritmia {
     }
 
     /**
-     * 
+     *
      * @param year
-     * @return 
+     * @return
      */
     static boolean anioBi(int year) {
         if (year % 4 != 0) {
             return false;
         } else if (year % 400 == 0) {
             return true;
-        } else return year % 100 != 0;
+        } else {
+            return year % 100 != 0;
+        }
     }
-
 
     /**
      *
@@ -282,11 +288,19 @@ public class Algoritmia {
         }
     }
 
+    static void displayExecutionTime(long time) {
+        System.out.println("Execution time: " + time + " ns" + " ("
+                + TimeUnit.MILLISECONDS.convert(time, TimeUnit.NANOSECONDS) + " ms)");
+    }
+
+
+    
     /**
      * Testing here
      *
      * @param args
      */
     public static void main(String[] args) {
+        
     }
 }
